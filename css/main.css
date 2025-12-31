@@ -1,0 +1,542 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.7;
+}
+
+/* =========================
+   COMMON
+========================= */
+.inner,
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 16px;
+}
+
+.btn-line {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #06c755;
+  color: #fff;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  padding: 0 16px 64px;
+}
+
+.hero-top {
+  width: 100%;
+  height: 44px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: .05em;
+}
+
+.hero-main {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0 48px;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-name {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-lead {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-badge {
+  background: #06c755;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 14px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-title h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-title h1 span {
+  font-size: 60px;
+  font-weight: 900;
+  color: #4da3ff;
+}
+
+.hero-sub {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-career {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.hero-cta {
+  background: #f5fbf8;
+  padding: 40px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.hero-cta-text {
+  margin-bottom: 20px;
+}
+
+/* =========================
+   SECTION HEAD
+========================= */
+.section-head {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.num {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #06c755;
+  border-bottom: 3px solid #06c755;
+  margin-bottom: 16px;
+}
+
+.section-head h2 {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.section-head span {
+  color: #06c755;
+  font-weight: bold;
+}
+
+/* =========================
+   IMAGES
+========================= */
+.chat-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.chat-row img,
+.result-row img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+/* =========================
+   FEATURE
+========================= */
+.feature-block {
+  padding: 80px 16px;
+}
+
+.feature-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.card {
+  background: #eaf7f1;
+  padding: 32px 28px;
+  border-radius: 16px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card .tag {
+  background: #06c755;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* =========================
+   PROFILE
+========================= */
+.profile {
+  background: #fff7d6;
+  padding: 80px 16px;
+}
+
+.profile-inner {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.profile-text {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.profile-text p {
+  margin-bottom: 24px;
+}
+
+.profile-photo {
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.profile-title {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   CTA & NOTICE
+========================= */
+.cta {
+  text-align: center;
+  padding: 64px 16px;
+}
+
+.notice {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .hero-main,
+  .profile-inner {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title h1 {
+    font-size: 36px;
+  }
+
+  .hero-title h1 span {
+    font-size: 40px;
+  }
+}
+/* 修复讲师介绍区宽度失控 */
+.profile-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* =========================
+   功能区 · 完全对照参考图
+   ========================= */
+
+/* 外框 */
+.feature {
+  padding: 80px 16px;
+}
+
+.feature-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== 上方三卡片 ===== */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.feature-card {
+  background: #eaf7f1;
+  padding: 28px 24px 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card h3 {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: auto; /* 🔥 关键：按钮沉底 */
+}
+
+.feature-card span {
+  align-self: flex-start;
+  background: #06c755;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== 下方左右区 ===== */
+.feature-support {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr; /* 左文右图 */
+  gap: 64px;
+  align-items: center;
+}
+
+/* 左侧文字 */
+.support-text {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.support-text .btn-line {
+  margin-top: 24px;
+}
+
+/* 右侧图片 */
+.support-image {
+  display: flex;
+  justify-content: center;
+}
+
+.support-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-support {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .support-image {
+    margin-top: 32px;
+  }
+}
+/* =========================
+   CTA 区 · 完全对照参考图
+   ========================= */
+
+.cta {
+  background: #f3fbf8;
+  padding: 72px 16px 80px;
+  text-align: center;
+}
+
+/* 主文案 */
+.cta-lead {
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+/* 中间向下箭头 */
+.cta-arrow {
+  width: 2px;
+  height: 36px;
+  background: #06c755;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 16px 0 32px;
+}
+
+.cta-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #06c755;
+}
+/* 超大按钮 */
+.cta-btn,
+.cta .btn-line {
+  display: inline-block;
+  background: #10c851;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 18px 56px;
+  border-radius: 999px;
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+
+/* 说明文字 */
+.cta-note {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .cta-lead {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+    padding: 16px 40px;
+  }
+}
+/* =========================
+   CTA 放大（对应你截图这段）
+   ========================= */
+
+/* 上面两行文字 */
+.cta-lead {
+  font-size: 26px;          /* 原来偏小 → 明显放大 */
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* 中间绿色按钮 */
+.cta-btn {
+  font-size: 18px;          /* 按钮文字放大 */
+  padding: 18px 48px;       /* 按钮本体变大 */
+  border-radius: 999px;
+}
+
+/* 按钮下方小字说明 */
+.cta-note {
+  font-size: 13px;          /* 原来太小，略放大 */
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+/* 箭头（如果有） */
+.cta-arrow {
+  margin: 16px 0 20px;
+  transform: scale(1.2);   /* 箭头整体放大 */
+}
+/* =========================
+   LINE 按钮 · 绝对生效版
+   ========================= */
+
+.btn-line,
+.cta-btn {
+  animation: lineGlow 1.6s infinite !important;
+}
+
+/* 核心动画：发光脉冲 */
+@keyframes lineGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(6, 199, 85, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(6, 199, 85, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(6, 199, 85, 0);
+  }
+}
